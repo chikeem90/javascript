@@ -27,7 +27,7 @@ class UserStorage {
     loginUser(id, password, onSuccess, onError) {
         setTimeout(() => {
             if (
-                (id === 'ellie' && password === 'dream') ||
+                (id === 'chikeem90' && password === 'dream') ||
                 (id === 'coder' && password === 'academy')
             ) {
                 onSuccess(id);
@@ -41,8 +41,8 @@ class UserStorage {
     // 실패할 경우 onError 콜백 함수 호출
     getRoles(user, onSuccess, onError) {
         setTimeout(() => {
-            if (user === 'ellie') {
-                onSuccess({ name: 'ellie', role: 'admin' });
+            if (user === 'chikeem90') {
+                onSuccess({ name: 'chikeem90', role: 'admin' });
             } else {
                 onError(new Error('no access'));
             }
